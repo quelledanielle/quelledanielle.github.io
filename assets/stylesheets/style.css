@@ -1,0 +1,36 @@
+* {
+  font-family: Baskerville, serif;
+  text-align: center;
+}
+
+body {
+  background-color: #659893;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+a, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: color 0.8s ease;
+  color: #659893;
+}
+
+.content {
+  height: 50%;
+  width: 100%;
+  position:absolute;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
