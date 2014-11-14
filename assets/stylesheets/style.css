@@ -1,10 +1,11 @@
 * {
   font-family: Baskerville, serif;
+  text-decoration: none;
   text-align: center;
 }
 
 body {
-  background-color: #659893;
+  background-color: #f5f4f0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,17 +14,22 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 4em;
+  margin-bottom: 20px;
 }
 
 a, a:visited {
-  color: #fff;
-  text-decoration: none;
-
-  transition: color 0.8s ease;
+  color: #484950;
+  transition: color 0.7s ease;
 }
 
 a:hover {
-  color: #659893;
+  color: rgba(151, 130, 165, 1);
+}
+
+hr {
+  width: 20%;
+  border: 0;
+  border-top: 1px solid #484950;
 }
 
 .content {
