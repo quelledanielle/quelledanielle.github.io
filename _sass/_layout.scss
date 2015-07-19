@@ -5,7 +5,7 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -30,7 +30,7 @@ figcaption {
 }
 
 ul, ol {
-  margin-left: $spacing-unit;
+  margin: ($spacing-unit / 2) $spacing-unit;
 }
 
 blockquote {
@@ -42,6 +42,7 @@ pre,
 code {
   border: 1px dashed $content-background-color;
   border-radius: 3px;
+  margin-bottom: $spacing-unit / 2;
 }
 
 code {
@@ -109,7 +110,7 @@ pre {
 }
 
 .page-heading {
-  margin: $spacing-unit auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -120,7 +121,7 @@ pre {
 
 .post-link {
   display: block;
-  color: $secondary-color;
+  margin: 0;
   font-size: 1.2em;
   line-height: 1.5em;
 }
@@ -130,6 +131,7 @@ pre {
  */
 .post {
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .post-header {

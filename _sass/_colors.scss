@@ -10,9 +10,9 @@ $grey-color-light: #aaaabb;
 $grey-color-dark:  #444455;
 
 $text-color:       #666677;
-$primary-color:    #225378;
-$secondary-color:  #1595A3;
-$background-color: #225378;
+$primary-color:    $code-purple;
+$secondary-color:  $code-teal;
+$background-color: rgb(34, 83, 120);
 $content-background-color: #f0f0f0;
 
 body {
@@ -32,6 +32,14 @@ a {
   }
 }
 
+strong {
+  color: $code-teal;
+}
+
+em {
+  color: $code-purple;
+}
+
 blockquote {
   color: $grey-color;
 }
@@ -46,6 +54,10 @@ code {
 }
 
 .site-title {
+  color: $secondary-color;
+}
+
+.post-link {
   color: $secondary-color;
 }
 

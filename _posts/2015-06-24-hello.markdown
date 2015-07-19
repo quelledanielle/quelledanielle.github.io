@@ -1,10 +1,38 @@
 ---
 layout: post
 title:  "Hello! (・ω・)ノ"
-date:   2015-06-24 23:36:50
+date:   2015-07-19 5:38:00
+tags: updates Shopify
 ---
-I'm coming to a new chapter in my life &mdash; one that I'd been nervous about for the past few years. What would it be like to go out into the *real* world after spending so much time in school? Who would I be in this new environment?
+Welcome to my new blog! I've been meaning to switch over to [Jekyll](http://jekyllrb.com) and [GitHub Pages](http://pages.github.com) for a while.
 
-The transition from school to work has been easier than I expected, thanks to Shopify's two weeks of onboarding. My group is one of the first to participate in this new program. Last week, I gained genuine appreciation for the product by using it myself to make a test store. I listened to recorded support calls, amazed by the breadth of knowledge a Shopify Guru must have. I spent the weekend at a lakeside cottage with amazing interns and chaperones. This week, I've been watching talks on culture and processes, and doing some codelabs.
+Very exciting things happened this Spring:
 
-I go home every day feeling like I was paid to have fun and eat good food. Everyone is kind and willing to help. I knew I would enjoy working at Shopify, but I didn't quite know I'd enjoy it this much.
+- *April 29:* Wrote my last final exam
+- *May 2:* Moved to Ottawa with [Alex Coco](http://alexcoco.com)
+- *June 2:* Convocated from [McGill](http://mcgill.ca)
+- *June 15:* Started work at [Shopify](http://shopify.com/careers)
+
+I've been working for a little over a month, and it has been an amazing experience.
+
+### Onboarding
+
+I onboarded with a neat group of incoming designers, developers, and Gurus during the first week. We each made a test store to familiarize ourselves with Shopify Admin and POS. We had discussions about support tickets and recorded calls. I can definitely appreciate the work Gurus do. They have knowledge about a wide variety of topics, and interact well with people.
+
+The designers and developers went on to R&D onboarding for the second week. We watched introductory presentations about different parts of the company, and how they align themselves with Shopify values.
+
+### Shopify values
+
+    1. Getting shit done  
+    2. Building for the long term  
+    3. Simplicity  
+    4. Acting like an owner  
+    5. Thriving on change  
+
+### My team
+
+After onboarding, I joined the *Storefront Editor* team ([Thibaut](https://twitter.com/tibc), [Gaurav](https://twitter.com/gauravmc), [Darren](https://twitter.com/73rhodes), [Tetsuro](https://twitter.com/t3tchi), [Rusty](https://twitter.com/Russell_Baylis) and [Jen](https://twitter.com/jenchow)).
+
+Learning about the storefront stack has been crazy! Gaurav paired with me for the first little while to help demystify the architecture and to teach me about good software development practices. I'm still wrapping my head around how [Liquid](https://github.com/Shopify/liquid) variables are passed to templates, and how the sidebar in the editor communicates with the IFrame preview of the storefront.
+
+Working with designers and UX researchers has been awesome! They come up with great ideas, test their assumptions by interacting with real merchants, and use the feedback to inspire better design. I love contributing to a project that makes a difference. I'm excited to see how merchants will be empowered by the new features we're implementing!
