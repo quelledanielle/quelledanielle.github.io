@@ -1,0 +1,12 @@
+# Site settings
+title: Danielle Pham
+email: danielle.pham@mail.mcgill.ca
+description: Canadian programmer life
+baseurl: ""
+url: "http://daniellepham.ca"
+twitter_username: quelledanielle
+github_username: quelledanielle
+permalink: /blog/:categories/:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown

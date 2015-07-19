@@ -1,0 +1,62 @@
+$code-blue:        #268bd2;
+$code-grey:        #888899;
+$code-grey-dark:   #444455;
+$code-purple:      #996699;
+$code-red:         #c0392b;
+$code-teal:        #2aa198;
+
+$grey-color:       #888899;
+$grey-color-light: #aaaabb;
+$grey-color-dark:  #444455;
+
+$text-color:       #666677;
+$primary-color:    #225378;
+$secondary-color:  #1595A3;
+$background-color: #225378;
+$content-background-color: #f0f0f0;
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $secondary-color;
+}
+
+a {
+  color: $grey-color-light;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+blockquote {
+  color: $grey-color;
+}
+
+pre,
+code {
+  background-color: #fff;
+}
+
+.wrapper {
+  background-color: $content-background-color;
+}
+
+.site-title {
+  color: $secondary-color;
+}
+
+.post-meta {
+  color: $grey-color-light;
+}
+
+h2.post-link {
+  color: $primary-color;
+
+  &:hover {
+    color: $text-color;
+  }
+}
