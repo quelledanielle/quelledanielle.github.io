@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Hello! (・ω・)ノ"
-date:   2015-07-19 5:38:00
+title: "Hello, Shopify!"
+date: 2015-07-19 5:38:00
 tags: updates Shopify
 ---
 Welcome to my new blog! I've been meaning to switch over to [Jekyll](http://jekyllrb.com) and [GitHub Pages](http://pages.github.com) for a while.
