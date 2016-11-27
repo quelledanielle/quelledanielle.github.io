@@ -5,14 +5,11 @@
   "authors": [
     "quelledanielle <quelledanielle@gmail.com>"
   ],
-  "description": "Canadian programmer life",
+  "description": "Canadian somebody",
   "main": "css/main.scss",
   "license": "MIT",
   "ignore": [
     "**/.*",
     "bower_components"
-  ],
-  "dependencies": {
-    "typicons": "~2.0.7"
-  }
+  ]
 }

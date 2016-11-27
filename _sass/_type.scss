@@ -1,11 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Handlee);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-$header-font-family: Handlee;
-$base-font-family: Monaco, monospace;
+$base-font-family: Monaco, Courier, monospace;
 
 $base-font-size:   14px;
-$small-font-size:  0.9em;
+$small-font-size:  12px;
 
 $base-line-height: 1.6em;
 
@@ -17,10 +13,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-h1, h2 {
-  font-family: $header-font-family;
-}
-
 a {
   text-decoration: none;
 }
@@ -29,30 +21,10 @@ blockquote {
   font-style: italic;
 }
 
-pre,
-code {
-  font-family: Monaco, monospace;
+pre, code {
   font-size: $small-font-size;
 }
 
-.site-title {
-  font-family: $header-font-family;
-  font-size: 3em;
-}
-
-.social-media-list {
-  font-size: 1.75em;
-}
-
-.post-meta {
+.pagination, .post-meta {
   font-size: $small-font-size;
-}
-
-.post-title {
-  font-size: 2em;
-  line-height: 1.2em;
-}
-
-h2.post-link {
-  font-size: 1.5em;
 }
