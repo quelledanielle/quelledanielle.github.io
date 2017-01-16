@@ -5,7 +5,9 @@ baseurl: ""
 url: "http://daniellepham.ca"
 github_username: quelledanielle
 
-permalink: /thoughts/:categories/:year/:month/:day/:title/
+gems: [jekyll-paginate]
+
+permalink: /thoughts/:categories/:title/
 paginate_path: /thoughts/:num/
 paginate: 10
 
