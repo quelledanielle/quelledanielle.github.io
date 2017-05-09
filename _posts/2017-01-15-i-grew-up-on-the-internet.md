@@ -2,7 +2,7 @@
 layout: post
 title: I grew up on the Internet
 date: 2017-01-15 22:14:00 -0500
-category: life
+meta: life
 ---
 
 I was seven when I created my first email address: daniellepham7@hotmail.com. In hindsight it was super reckless to reveal my identity so soon, but I had no idea what the consequences could be. I met people on MSN chatrooms who claimed to be around my age. Who knows who those people were‽ It's pure luck that I didn't find myself in any creepy situations. Seriously, teach kids about online safety.

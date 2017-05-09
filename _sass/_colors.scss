@@ -1,25 +1,28 @@
-$text-color:       #334;
+$text-color:       #445;
 $primary-color:    #51a3a3;
 $secondary-color:  #aab;
-$background-color: #f0f0f0;
+$light-gray-color: #eee;
+$dark-gray-color:  #112;
 
 body {
-  color: $text-color;
-  background-color: $background-color;
+  background-color: $dark-gray-color;
+  color: $light-gray-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $text-color;
-}
-
-a {
+h1, h2, h3, h4, h5, h6,
+a:hover, blockquote {
   color: $primary-color;
-
-  &:hover {
-    color: $text-color;
-  }
 }
 
-.post-meta {
-  color: $secondary-color;
+a { color: $secondary-color; }
+
+.page-content {
+  background:
+    linear-gradient(-90deg, rgba(255, 255, 255, 0.5) 2px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.5) 2px, transparent 1px);
+  background-color: $light-gray-color;
+  color: $text-color;
 }
+
+.post-title, .current-page, .active { color: $primary-color; }
+.post-meta, .inactive { color: $secondary-color; }

@@ -1,69 +1,88 @@
-$spacing: 15px;
-$spacing-large: $spacing * 2;
+$row-count: 38;
+$col-count: 32;
+
+$spacing:           1em;
+$line-width:        0.125em;
+$double-line-width: 0.25em;
+
+$grid-width: $spacing + $double-line-width;
+$page-width: $grid-width * $col-count - $line-width;
+
+* { box-sizing: border-box; }
 
 body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+article, div, p, blockquote, pre, hr,
+dl, dd, ol, ul, li, figure {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: $spacing;
+header {
+  border-bottom: $line-width solid $primary-color;
+  margin: 0 ($spacing + $line-width);
+
+  h1 { padding: 0 $double-line-width; }
 }
 
-h1 {
-  border-bottom: 2px solid $text-color;
-  padding-bottom: $spacing;
+p {
+  padding: ($spacing / 2 + $line-width) 0;
 }
 
 hr {
   border: 0;
-  border-bottom: 2px solid $text-color;
-  margin: $spacing-large 0;
-  width: 100%;
-}
-
-ul, ol {
-  margin: $spacing $spacing-large;
+  border-bottom: $line-width solid $secondary-color;
+  margin-top: -$line-width;
+  margin-right: $grid-width;
+  margin-bottom: $grid-width;
+  margin-left: $grid-width;
 }
 
 blockquote {
-  border-left: 2px solid $text-color;
-  padding-left: $spacing;
+  border-left: $line-width solid $primary-color;
+  margin-left: -$line-width * 3;
+  padding-left: $grid-width + $double-line-width;
 }
 
-code {
-  padding: 1px 5px;
-}
+ul, ol { padding-left: $grid-width; }
+li { margin: $grid-width 0; }
 
-pre {
-  padding-top: 0;
-  padding-left: $spacing;
-  padding-bottom: $spacing;
-  overflow-x: scroll;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
+nav {
+  width: $page-width;
+  margin: $grid-width auto;
 }
 
 .page-content {
-  max-width: 800px;
-  margin: $spacing-large;
+  background-size:
+    $grid-width $grid-width,
+    $grid-width $grid-width;
+  max-width: $page-width;
+  min-height: $grid-width * $row-count;
+  margin: $grid-width auto;
+
+  > :first-child { padding-top: $grid-width; }
+  > :last-child:not(:only-child) { padding-bottom: $grid-width * 2; }
 }
 
-.post-list {
-  margin: 0;
-  list-style: none;
+.post-content {
+  margin: $grid-width;
+  padding: 0 $double-line-width;
 
-  li:not(:last-child) {
-    margin-bottom: $spacing;
+  hr {
+    margin-top: $grid-width - $line-width;
+    margin-right: auto;
+    margin-left: auto;
+    width: 68%;
   }
 }
 
-.pagination {
-  margin: $spacing 0;
+.pagination { margin: $grid-width 0; }
+
+.social-media-list {
+  width: 100%;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0;
+  }
 }

@@ -1,4 +1,4 @@
-title: x
+title: danielle pham
 email: danielle.pham@mail.mcgill.ca
 description: Canadian somebody
 baseurl: "/"
@@ -8,7 +8,7 @@ github_username: quelledanielle
 
 gems: [jekyll-paginate]
 
-permalink: /thoughts/:categories/:title/
+permalink: /thoughts/:title/
 paginate_path: /thoughts/:num/
 paginate: 10
 

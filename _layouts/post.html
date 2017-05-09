@@ -1,7 +1,8 @@
 ---
 layout: base
 ---
-<p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-<article>
+<div class="post-content">
+  {% assign post = page %}
+  {% include meta.html %}
   {{ content }}
-</article>
+</div>
