@@ -12,4 +12,8 @@ permalink: /thoughts/:title/
 paginate_path: /thoughts/:num/
 paginate: 10
 
+sass:
+  sass_dir: _sass
+  style: :compressed
+
 markdown: kramdown
