@@ -1,12 +1,14 @@
-$row-count: 38;
-$col-count: 32;
+$min-row-count: 38;
+$min-col-count: 16;
+$max-col-count: 32;
 
 $spacing:           1em;
 $line-width:        0.125em;
 $double-line-width: 0.25em;
 
 $grid-width: $spacing + $double-line-width;
-$page-width: $grid-width * $col-count - $line-width;
+$min-page-width: $grid-width * $min-col-count - $line-width;
+$max-page-width: $grid-width * $max-col-count - $line-width;
 
 * { box-sizing: border-box; }
 
@@ -24,9 +26,12 @@ header {
   h1 { padding: 0 $double-line-width; }
 }
 
-p {
-  padding: ($spacing / 2 + $line-width) 0;
+nav {
+  margin: $spacing 0;
+  padding-left: $double-line-width;
 }
+
+p { padding: ($spacing / 2 + $line-width) 0; }
 
 hr {
   border: 0;
@@ -43,21 +48,19 @@ blockquote {
   padding-left: $grid-width + $double-line-width;
 }
 
-ul, ol { padding-left: $grid-width; }
 li { margin: $grid-width 0; }
 
-nav {
-  width: $page-width;
+.container {
   margin: $grid-width auto;
+  min-width: $min-page-width;
+  max-width: $max-page-width;
 }
 
 .page-content {
   background-size:
     $grid-width $grid-width,
     $grid-width $grid-width;
-  max-width: $page-width;
-  min-height: $grid-width * $row-count;
-  margin: $grid-width auto;
+  min-height: $grid-width * $min-row-count;
 
   > :first-child { padding-top: $grid-width; }
   > :last-child:not(:only-child) { padding-bottom: $grid-width * 2; }
@@ -79,7 +82,6 @@ nav {
 
 .social-media-list {
   width: 100%;
-  padding: 0;
 
   li {
     display: inline-block;
