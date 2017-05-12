@@ -48,6 +48,7 @@ blockquote {
   padding-left: $grid-width + $double-line-width;
 }
 
+ul { padding-left: $grid-width; }
 li { margin: $grid-width 0; }
 
 .container {
@@ -79,6 +80,11 @@ li { margin: $grid-width 0; }
 }
 
 .pagination { margin: $grid-width 0; }
+
+.post-list, .social-media-list {
+  padding-left: 0;
+  list-style: none;
+}
 
 .social-media-list {
   width: 100%;
