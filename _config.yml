@@ -1,19 +1,13 @@
 title: Danielle Pham
 email: danielle.pham@mail.mcgill.ca
 description: Canadian maker of crafts and code
-baseurl: "/"
 url: "https://daniellepham.ca"
 enforce_ssl: "daniellepham.ca"
 github_username: quelledanielle
 
-plugins: [jekyll-paginate]
-
 permalink: /thoughts/:title/
 paginate_path: /thoughts/:num/
 paginate: 10
+timezone: America/Toronto
 
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-markdown: kramdown
+plugins: [jekyll-paginate]
