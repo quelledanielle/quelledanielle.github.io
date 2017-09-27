@@ -6,7 +6,7 @@ url: "https://daniellepham.ca"
 enforce_ssl: "daniellepham.ca"
 github_username: quelledanielle
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 permalink: /thoughts/:title/
 paginate_path: /thoughts/:num/
