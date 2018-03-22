@@ -16,12 +16,6 @@ footer {
 
 h1, h2 { text-transform: uppercase; }
 
-a {
-  text-decoration: none;
-
-  &:hover { box-shadow: inset 0 -2px 0 $secondary-color; }
-}
-
 p {
   line-height: 2.5em;
   text-indent: 1.25em;
@@ -29,6 +23,6 @@ p {
 
 blockquote p { text-indent: 0; }
 
-.pagination .current-page { box-shadow: inset 0 -2px 0 $primary-color; }
+.pagination .current-page { box-shadow: inset 0 -2px 0 $dark-accent-color; }
 
 .post-list, .social-media-list { list-style: none; }

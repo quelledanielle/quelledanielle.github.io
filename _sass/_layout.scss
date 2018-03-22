@@ -20,7 +20,7 @@ dl, dd, ol, ul, li, figure {
 }
 
 header {
-  border-bottom: $line-width solid $primary-color;
+  border-bottom: $line-width solid $dark-accent-color;
   margin: 0 auto;
   min-width: $min-page-width - ($spacing + $double-line-width) * 2;
   max-width: $max-page-width - ($spacing + $double-line-width) * 2;
@@ -30,7 +30,7 @@ p { padding: ($spacing / 2 + $line-width) 0; }
 
 hr {
   border: 0;
-  border-bottom: $line-width solid $secondary-color;
+  border-bottom: $line-width solid $medium-gray-color;
   margin-top: -$line-width;
   margin-right: $grid-width;
   margin-bottom: $grid-width;
@@ -38,7 +38,7 @@ hr {
 }
 
 blockquote {
-  border-left: $line-width solid $primary-color;
+  border-left: $line-width solid $dark-accent-color;
   margin-left: -$line-width * 3;
   padding-left: $grid-width + $double-line-width;
 }
