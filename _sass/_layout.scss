@@ -21,14 +21,9 @@ dl, dd, ol, ul, li, figure {
 
 header {
   border-bottom: $line-width solid $primary-color;
-  margin: 0 ($spacing + $line-width);
-
-  h1 { padding: 0 $double-line-width; }
-}
-
-nav {
-  margin: $spacing 0;
-  padding-left: $double-line-width;
+  margin: 0 auto;
+  min-width: $min-page-width - ($spacing + $double-line-width) * 2;
+  max-width: $max-page-width - ($spacing + $double-line-width) * 2;
 }
 
 p { padding: ($spacing / 2 + $line-width) 0; }
@@ -52,15 +47,18 @@ ul { padding-left: $grid-width; }
 li { margin: $grid-width 0; }
 
 .container {
-  margin: $grid-width auto;
-  min-width: $min-page-width;
-  max-width: $max-page-width;
+  width: 100%;
+  padding: ($spacing * 2) 0;
 }
 
 .page-content {
   background-size:
     $grid-width $grid-width,
     $grid-width $grid-width;
+  margin: 0 auto;
+  width: 100%;
+  min-width: $min-page-width;
+  max-width: $max-page-width;
   min-height: $grid-width * $min-row-count;
 
   > :first-child { padding-top: $grid-width; }
@@ -68,8 +66,9 @@ li { margin: $grid-width 0; }
 }
 
 .post-content {
-  margin: $grid-width;
-  padding: 0 $double-line-width;
+  margin-bottom: $grid-width;
+  padding: $grid-width;
+  width: 100%;
 
   hr {
     margin-top: $grid-width - $line-width;
@@ -95,7 +94,13 @@ li { margin: $grid-width 0; }
   }
 }
 
+.profile-photo {
+  width: 100%;
+}
+
 .gravatar {
-  height: 6em;
+  display: block;
+  height: 5 * $grid-width;
   border-radius: 50%;
+  margin: 0 auto;
 }

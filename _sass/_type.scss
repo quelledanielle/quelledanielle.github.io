@@ -7,7 +7,11 @@ pre, code {
   -webkit-text-size-adjust: 100%;
 }
 
-footer { font-size: 0.75em; }
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  text-indent: 0;
+}
 
 h1, h2 { text-transform: uppercase; }
 
@@ -23,19 +27,6 @@ p {
 }
 
 blockquote p { text-indent: 0; }
-
-nav {
-  text-transform: lowercase;
-  font-size: 0.825em;
-
-  a { box-shadow: none; }
-  a:hover { box-shadow: inset 0 -2px 0 $secondary-color; }
-}
-
-.center-text, .center-text > * {
-  text-align: center;
-  text-indent: 0;
-}
 
 .pagination .current-page { box-shadow: inset 0 -2px 0 $primary-color; }
 
