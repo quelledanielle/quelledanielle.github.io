@@ -1,0 +1,62 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #393939;
+    color: #eee;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#d {
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap row;
+}
+
+.page {
+    margin: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    min-height: 760px;
+    background:
+        linear-gradient(transparent 45%, #f7f7f7 45% 55%, transparent 55%),
+        linear-gradient(to right, transparent 45%, #f7f7f7 45% 55%, transparent 55%);
+    background-size: 20px 20px;
+    background-color: #eee;
+    color: #445;
+}
+
+.page header {
+    padding: 20px 30px 10px;
+}
+
+.page h1 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00b4b4;
+    color: #00b4b4;
+}
+
+.page p {
+    text-indent: 20px;
+    margin: 0 30px 20px;
+}
+
+.page a {
+    color: #940060;
+}
+
+.page a:hover {
+    color: #00b4b4;
+}
