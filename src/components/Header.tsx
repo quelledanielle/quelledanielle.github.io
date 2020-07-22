@@ -33,7 +33,6 @@ const HeaderInner = styled.div`
   font-family: ${fonts.monospace};
   font-weight: 600;
   font-style: italic;
-  text-transform: lowercase;
 `
 
 interface HeaderProps {

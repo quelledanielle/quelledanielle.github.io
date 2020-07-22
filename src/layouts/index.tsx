@@ -9,6 +9,10 @@ import Header from '../components/Header'
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 
+interface PageProps {
+  pageTitle: string
+}
+
 interface StaticQueryProps {
   site: {
     siteMetadata: {
@@ -18,7 +22,7 @@ interface StaticQueryProps {
   }
 }
 
-const IndexLayout: React.FC = ({ children }) => (
+const IndexLayout: React.FC<PageProps> = ({ children, pageTitle }) => (
   <StaticQuery
     query={graphql`
       query IndexLayoutQuery {
@@ -34,7 +38,7 @@ const IndexLayout: React.FC = ({ children }) => (
       <LayoutRoot>
         <Helmet title={data.site.siteMetadata.title} meta={[{ name: 'description', content: data.site.siteMetadata.description }]} />
         <LayoutMain>
-          <Header title={data.site.siteMetadata.title} />
+          <Header title={pageTitle} />
           {children}
         </LayoutMain>
       </LayoutRoot>

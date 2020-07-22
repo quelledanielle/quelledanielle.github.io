@@ -7,7 +7,7 @@ const StyledPage = styled.div`
   display: block;
   flex-basis: ${heights.header * 3}px;
   position: relative;
-  padding: ${dimensions.containerPadding}rem;
+  padding: ${dimensions.containerPadding / 2}rem ${dimensions.containerPadding}rem;
   color: ${colors.gray.dark};
   background-color: ${colors.gray.light};
   border: 0.4rem solid ${colors.teal};

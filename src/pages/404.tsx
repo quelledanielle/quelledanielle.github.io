@@ -5,9 +5,8 @@ import Page from '../components/Page'
 import IndexLayout from '../layouts'
 
 const NotFoundPage = () => (
-  <IndexLayout>
+  <IndexLayout pageTitle="Not found">
     <Page>
-      <h1>Page not found</h1>
       <p>
         Doesn't look like anything to me. <Link to="/">Go home.</Link>
       </p>

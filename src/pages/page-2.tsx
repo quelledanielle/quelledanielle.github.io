@@ -38,9 +38,8 @@ const PageTwo = () => (
       }
     `}
     render={(data: StaticQueryProps) => (
-      <IndexLayout>
+      <IndexLayout pageTitle="Page 2">
         <Page>
-          <h1>Page 2</h1>
           <p>Something something</p>
           <ul>
             <li>
