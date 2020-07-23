@@ -1,9 +1,7 @@
 import { dimensions, fonts, colors, breakpoints } from './variables'
-import { fontFaces, getEmSize } from './mixins'
+import { getEmSize } from './mixins'
 
 export default `
-  ${fontFaces}
-
   html {
     box-sizing: border-box;
   }

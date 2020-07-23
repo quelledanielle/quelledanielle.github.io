@@ -17,6 +17,21 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://dpham.info'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['JetBrainsMono'],
+          urls: ['/stylesheets/fonts.css']
+        }
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
@@ -47,17 +62,11 @@ module.exports = {
         ]
       }
     },
-    'gatsby-transformer-json',
-    {
-      resolve: 'gatsby-plugin-canonical-urls',
-      options: {
-        siteUrl: 'https://dpham.info'
-      }
-    },
     'gatsby-plugin-emotion',
-    'gatsby-plugin-typescript',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-typescript',
+    'gatsby-transformer-json',
+    'gatsby-transformer-sharp'
   ]
 }
