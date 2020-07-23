@@ -54,6 +54,5 @@ export const dimensions = {
 }
 
 export const heights = {
-  avatar: 150,
   header: 100
 }

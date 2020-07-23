@@ -1,20 +1,33 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
-
-import { heights } from '../styles/variables'
+import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
 
 const StyledAvatar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: ${heights.avatar}px;
-  height: ${heights.avatar}px;
 `
 
 const Avatar: React.FC = () => (
-  <StyledAvatar>
-    <img src="/images/d.png" alt="Photo of D smiling" />
-  </StyledAvatar>
+  <StaticQuery
+    query={graphql`
+      query AvatarQuery {
+        file(relativePath: { eq: "images/d.png" }) {
+          childImageSharp {
+            fixed(height: 150) {
+              ...GatsbyImageSharpFixed_noBase64
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <StyledAvatar>
+        <Img fixed={data.file.childImageSharp.fixed} alt="D smiling" />
+      </StyledAvatar>
+    )}
+  />
 )
 
 export default Avatar
