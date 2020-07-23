@@ -23,6 +23,18 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'D Pham',
+        short_name: 'D Pham',
+        start_url: '/',
+        background_color: '#464650',
+        theme_color: '#009595',
+        display: 'standalone',
+        icon: 'src/content/images/d.png'
+      }
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {
