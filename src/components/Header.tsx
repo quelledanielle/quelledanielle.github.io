@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 import { colors, dimensions, fonts, heights } from '../styles/variables'
 
-import Avatar from '../components/Avatar'
+import Avatar from './Avatar'
 
 const HeaderContainer = styled.div`
   display: flex;
